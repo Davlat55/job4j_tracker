@@ -5,7 +5,7 @@ public class Triangl {
     private PointOOP second;
     private PointOOP third;
 
-    public Triangle(PointOOP ap, PointOOP bp, PointOOP cp) {
+    public Triangl(PointOOP ap, PointOOP bp, PointOOP cp) {
         this.first = ap;
         this.second = bp;
         this.third = cp;
@@ -31,7 +31,7 @@ public class Triangl {
         double bc = second.distance(third);
         double p = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-            rsl = Math.sqrt(period(ab,ac,bc) * (period(ab,ac,bc) - ab) * ((period(ab,ac,bc) - ac) * ((period(ab,ac,bc) - bc));
+            rsl = Math.sqrt(period(ab,ac,bc) * (period(ab,ac,bc) - ab) * (period(ab,ac,bc) - ac) * (period(ab,ac,bc) - bc));
         }
         return rsl;
     }
