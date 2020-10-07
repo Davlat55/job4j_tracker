@@ -18,10 +18,7 @@ public class Triangl {
 
 
     public boolean exist(double ab, double ac, double bc) {
-         if (((ab + ac) > bc) && (( ac + bc) > ab) && (( ab + bc) > ac)){
-             return true;
-         }
-        return false;
+        return (((ab + ac) > bc) && ((ac + bc) > ab) && ((ab + bc) > ac))
     }
 
     public double area() {
@@ -31,7 +28,7 @@ public class Triangl {
         double bc = second.distance(third);
         double p = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-            rsl = Math.sqrt(period(ab,ac,bc) * (period(ab,ac,bc) - ab) * (period(ab,ac,bc) - ac) * (period(ab,ac,bc) - bc));
+            rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
     }
