@@ -36,8 +36,7 @@ public class Point {
     }
 
     public double distance3d(Point that) {
-       double  temp =  pow(this.x - that.x, 2) + pow(this.y - that.y, 2);
-        return sqrt(temp + pow(this.z - that.z, 2));
+        return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2) + pow(this.z - that.z, 2));
     }
 
     public void info() {
