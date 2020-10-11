@@ -18,5 +18,6 @@ public class PointTest {
 
     @Test
     public void distance3d() {
+
     }
 }
