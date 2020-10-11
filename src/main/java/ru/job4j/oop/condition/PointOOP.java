@@ -23,7 +23,7 @@ public class PointOOP {
 
     public static void main(String[] args) {
         PointOOP a = new PointOOP(0, 0, 1);
-        PointOOP b = new PointOOP(0, 2, 2);
+        PointOOP b = new PointOOP(0, 2, 1);
         double dist = a.distance(b);
         System.out.println(dist);
     }
