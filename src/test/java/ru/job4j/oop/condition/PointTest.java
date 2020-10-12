@@ -6,7 +6,7 @@ import org.junit.Assert;
 public class PointTest {
 
     @Test
- //   public void distance() {
+    public void distance() {
  //       int expected = 2;
  //       int x1 = 0;
  //       int y1 = 0;
@@ -16,6 +16,6 @@ public class PointTest {
  //       int z2 = 1;
  //       double out = PointOOP.distance(x2, x1, y2, y1, z2,z1);
  //      Assert.assertEquals(expected, out, 0.01);
- //   }
+    }
 
 }
