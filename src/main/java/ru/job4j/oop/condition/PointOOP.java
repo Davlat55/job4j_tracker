@@ -12,9 +12,10 @@ public class PointOOP {
     private int z;
 
     public PointOOP(int first, int second, int third) {
-        this.x = first;
-        this.y = second;
-        this.z = third;
+
+        int x = new first;
+        int y = new second;
+        int z = new third;
     }
 
     public double distance(PointOOP that) {
