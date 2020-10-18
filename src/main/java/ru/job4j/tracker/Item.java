@@ -4,18 +4,29 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Item {
-    private int id;
-    private String name;
-    LocalDateTime currentDateTime = LocalDateTime.now();
 
-    public class SetUI {
-        public static String createdFormat;
-        public static String currentDateTime;
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
-        String createdFormat = currentDateTime.format(formatter);
+    LocalDateTime created = LocalDateTime.now();
+
+    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE--yyyy HH:mm:ss");
+    private String createdformat = created.format(formatter);
+
+    public String getformatter() {
+        return createdformat;
     }
 
+    public void setFormatter(String createdformat) {
+        this.createdformat = created.format(formatter);
+    }
+
+    public class StartUI {
+        String createdFormat = DateTimeFormatter.format(String.valueOf(formatter));
+    }
+
+
+
     public static void main(String[] args) {
-        System.out.println("Текущие дата и время после форматирования: " + SetUI.createdFormat);
+
+        String vremya = getformatter();
+        System.out.println("Текущие дата и время после форматирования: " + vremya);
     }
 }
