@@ -11,7 +11,7 @@ public class Item {
     }
 
     public class StartUI {
-     Item item = new Item();
+       Item item = new Item();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         private String currentDateTime;
         String currentDateTimeFormat = currentDateTime.format(formatter);
@@ -20,7 +20,6 @@ public class Item {
     public static void main(String[] args) {
         LocalDateTime currentDateTime = LocalDateTime.now();
         System.out.println("Текущие дата и время до форматирования: " + currentDateTime);
-
 
         System.out.println("Текущие дата и время после форматирования: " + currentDateTime);
     }
