@@ -1,7 +1,5 @@
 package ru.job4j.pojo;
 
-import java.util.Date;
-
 public class Student {
     private String fio;
     private int gruppa;
