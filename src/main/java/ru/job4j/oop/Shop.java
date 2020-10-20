@@ -6,10 +6,11 @@ public class Shop {
         System.out.println(product.label());
     }
 
-    public static Product of(String name, int price) {
-        if ("Oil".equals(name)) {
-            return new LiquidationProduct(name, price);
-        }
+   public static Product of(String name, int price) {
+   //     if ("Oil".equals(name)) {
+   //         return new LiquidationProduct(name, price);   // name у нас было объявлено как Private? ошибка в этой строке
+   //     }
         return new Product(name, price);
+
     }
 }
