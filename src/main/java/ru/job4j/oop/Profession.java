@@ -32,33 +32,33 @@ public class Profession {
         }
     }
 
-    public class Engeneer extends Profession{
+    public class Engeneer extends Profession {
         public String matters;
         public String WorkPlace;
 
-        public void doIt(){
+        public void doIt() {
             ;
         }
 
-     public class Surgeon extends Doctor{
+        public class Surgeon extends Doctor {
             public String WorkTime;
             public String bodypart;
 
-     }
+        }
 
-     public class Dentist extends Doctor{
+        public class Dentist extends Doctor {
             public String denture;               // зубной протез
-     }
+        }
 
-     public class Programmer extends Engeneer{
+        public class Programmer extends Engeneer {
             public String iqLevel;
-     }
+        }
 
-     public class Builder extends Engeneer{
+        public class Builder extends Engeneer {
             public String armStrength;
-     }
+        }
 
 
-
+    }
 
 }

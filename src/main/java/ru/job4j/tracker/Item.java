@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Item {
-    private LocalDateTime created = LocalDateTime.now();
+ /*   private LocalDateTime created = LocalDateTime.now();
 
     public LocalDateTime getCreated() {
         return created;
@@ -22,6 +22,6 @@ public class Item {
         LocalDateTime currentDateTime = LocalDateTime.now();
         System.out.println("Текущие дата и время до форматирования: " + currentDateTime);
 
-        System.out.println("Текущие дата и время после форматирования: " + StartUI.????);   // и здесь печатать как StartUI.created.. но, увы и ах...после обращения через точку он  ничего не видит из класса
-    }
+ //       System.out.println("Текущие дата и время после форматирования: " + StartUI.????);   // и здесь печатать как StartUI.created.. но, увы и ах...после обращения через точку он  ничего не видит из класса
+    } */
 }
