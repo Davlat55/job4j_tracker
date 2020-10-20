@@ -5,7 +5,7 @@ import java.util.Date;
 public class Student {
     private String fio;
     private int gruppa;
-    private Date startEducation;
+    private String startEducation;
 
     public String getFio() {
         return fio;
@@ -23,11 +23,11 @@ public class Student {
         this.gruppa = gruppa;
     }
 
-    public Date getStartEducation() {
+    public String getStartEducation() {
         return startEducation;
     }
 
-    public void setStartEducation(Date startEducation) {
+    public void setStartEducation(String startEducation) {
         this.startEducation = startEducation;
     }
 
