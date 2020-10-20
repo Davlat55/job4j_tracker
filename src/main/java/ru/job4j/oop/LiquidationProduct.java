@@ -1,6 +1,6 @@
 package ru.job4j.oop;
 
-public class LiquidationProduct extends Product{
+public final class LiquidationProduct extends Product{
     public LiquidationProduct(String name, int price) {
         super(name, price);
     }
@@ -8,5 +8,10 @@ public class LiquidationProduct extends Product{
     @Override
     public int discount() {
         return 90;
+    }
+
+    @Override
+    public String label() {
+        return name + " " + price();
     }
 }
