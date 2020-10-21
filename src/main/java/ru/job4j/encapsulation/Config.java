@@ -8,6 +8,7 @@ public class Config {
     public Config(String name) {
         this.name = name;
     }
+
     public void print() {                        // 3
         System.out.println(position);
     }
