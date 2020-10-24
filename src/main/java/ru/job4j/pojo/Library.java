@@ -20,7 +20,7 @@ public class Library {
 
         books[0] = cod;
         books[3] = prata;
-
+        System.out.println(" ");
         for (int i = 0; i < books.length; i++) {
             Book b = books[i];
             System.out.println(b.getTitle() + " " + b.getPages());
