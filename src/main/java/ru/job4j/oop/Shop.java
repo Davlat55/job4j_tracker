@@ -2,6 +2,7 @@ package ru.job4j.oop;
 
 public class Shop {
     public static void main(String[] args) {
+
         Product product = of("Oil", 100);
         System.out.println(product.label());
     }
@@ -12,6 +13,9 @@ public class Shop {
             return new LiquidationProduct(name, price).getProduct();
         }
         return new Product(name, price);
+    }
 
+    public static int indexOfNull(Product[] products) {
+            return -1;
     }
 }

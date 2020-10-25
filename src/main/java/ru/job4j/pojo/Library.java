@@ -13,6 +13,7 @@ public class Library {
         books[1] = shildt;
         books[2] = tolstoy;
         books[3] = cod;
+
         for (int i = 0; i < books.length; i++) {
             Book b = books[i];
             System.out.println(b.getTitle() + " " + b.getPages());
@@ -25,8 +26,17 @@ public class Library {
             Book b = books[i];
             System.out.println(b.getTitle() + " " + b.getPages());
         }
+        System.out.println("Есть ли в массиве книга - Clean Cod?");
+        for (int i = 0; i < books.length; i++) {
+            Book c = books[i];
+            if("Clean Cod".equals(c.getTitle())){
+                System.out.println("Такая книга не найдена");
+            } else {
+                System.out.println("Есть такая книга");
+                break;
+            }
 
-
+        }
 
     }
 }
