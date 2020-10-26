@@ -29,13 +29,10 @@ public class Library {
         System.out.println("Есть ли в массиве книга - Clean Cod?");
         for (int i = 0; i < books.length; i++) {
             Book c = books[i];
-            if("Clean Cod".equals(c.getTitle())){
-                System.out.println("Такая книга не найдена");
-            } else {
+            if(c.getTitle().equals("Clean cod")){
                 System.out.println("Есть такая книга");
                 break;
             }
-
         }
 
     }
