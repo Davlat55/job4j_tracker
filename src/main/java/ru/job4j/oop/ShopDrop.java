@@ -10,6 +10,7 @@ public class ShopDrop {
             Product product = products[i];
             System.out.println(product.getName());
         }
+
         products[1] = null;
         for (int i = 0; i < products.length; i++) {
             Product product = products[i];
@@ -18,6 +19,27 @@ public class ShopDrop {
             } else {
                 System.out.println("null");
             }
+        }
+
+        products[1] = products[2];
+        products[2] = null;
+        for (int i = 0; i < products.length; i++) {
+            Product product = products[i];
+            if (product != null) {
+                System.out.println(product.getName());
+            } else {
+                System.out.println("null");
+            }
+        }
+
+        public static Product[] leftShift(Product[] products, int index) {
+            products[index] = null;
+            for (int i = 0; i < products.length; i++) {
+                Product product = products[i];
+                products[index] = products[index + 1];
+                products[index + 1] = null;
+            }
+            return products;
         }
     }
 }
