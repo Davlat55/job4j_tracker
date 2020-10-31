@@ -31,16 +31,19 @@ public class ShopDrop {
                 System.out.println("null");
             }
         }
+    }
 
-        public static Product[] leftShift(Product[] products, int index) {
-            products[index] = null;
-            for (int i = 0; i < products.length; i++) {
-                Product product = products[i];
-                if(product == null) {
+    public static Product[] leftShift(Product[] products, int index) {
+        products[index] = null;
+        for (int i = 0; i < products.length; i++) {
+            Product product = products[i];
+            if (products[i] == null) {
                 products[index] = products[index + 1];
                 products[index + 1] = null;
             }
-            return product;
+
         }
+        return products;
     }
 }
+
