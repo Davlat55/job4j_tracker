@@ -36,10 +36,11 @@ public class ShopDrop {
             products[index] = null;
             for (int i = 0; i < products.length; i++) {
                 Product product = products[i];
+                if(product == null) {
                 products[index] = products[index + 1];
                 products[index + 1] = null;
             }
-            return products;
+            return;
         }
     }
 }
