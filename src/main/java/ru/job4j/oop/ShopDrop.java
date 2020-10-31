@@ -41,7 +41,6 @@ public class ShopDrop {
                 products[index] = products[index + 1];
                 products[index + 1] = null;
             }
-
         }
         return products;
     }
