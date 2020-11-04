@@ -5,6 +5,7 @@ public class Tracker {
     private int ids = 1;
     private int size = 0;
 
+
     public Item add(Item item) {
         item.setId(ids++);
         items[size++] = item;
@@ -19,6 +20,14 @@ public class Tracker {
                 rsl = item;
                 break;
             }
+        }
+        return rsl;
+    }
+
+    public Item[] findAll(){
+        Item[] rsl = null;
+        for (int index = 0; index <size ; index++) {
+            Item[index] = items[index];
         }
         return rsl;
     }
