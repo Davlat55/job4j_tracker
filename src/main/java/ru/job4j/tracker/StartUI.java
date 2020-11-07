@@ -8,7 +8,11 @@ public class StartUI {
        Item item = new Item();
        item.setId(4);
        item.setName("Vasya");
-        System.out.println(item);
+       System.out.println(item);
+
+
+
+
 
         LocalDateTime currentDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
