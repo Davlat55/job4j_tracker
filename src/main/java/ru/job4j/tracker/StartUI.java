@@ -10,9 +10,10 @@ public class StartUI {
        item.setName("Vasya");
        System.out.println(item);
 
-
-
-
+       Tracker tracker = new Tracker();
+       tracker.add(item);
+       tracker.findById(1);
+       System.out.println(item);
 
         LocalDateTime currentDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
