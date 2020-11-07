@@ -36,7 +36,7 @@ public class Tracker {
         //               break;
         //           }
         //   }
-       return index !=-1?items[index]:null;
+       return index !=-1 ? items[index] : null;
       }
 
 
@@ -66,6 +66,18 @@ public class Tracker {
                 break;
             }
         }
+        return rsl;
+    }
+
+    public boolean replace(int id, Item item) {
+        boolean rsl;
+        int index = indexOf(id);
+        if(index > 0) {
+            // Tracker tracker = items[index];
+            items[index] = item;
+            rsl = true;
+        } else
+            rsl = false;
         return rsl;
     }
 
