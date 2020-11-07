@@ -73,7 +73,7 @@ public class Tracker {
         boolean rsl;
         int index = indexOf(id);
         if(index > 0) {
-             item = items[index];  // сама замена здесь должна произойти
+             Tracker tracker = items[index];  // сама замена здесь должна произойти
             rsl = true;
         } else
             rsl = false;
