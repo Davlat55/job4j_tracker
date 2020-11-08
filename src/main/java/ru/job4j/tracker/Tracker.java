@@ -74,7 +74,7 @@ public class Tracker {
         int index = indexOf(id);
         if(index > 0) {
             items[index] = item;
-             //Tracker tracker = items[index];  // сама замена здесь должна произойти
+            items[index].setId(id);
             rsl = true;
         } else
             rsl = false;
