@@ -26,19 +26,9 @@ public class Tracker {
     }
 
     public Item findById(int id) {
-     //   Item rsl = null;
-        int index = indexOf(id);
-
-        //       for (int index = 0; index < size; index++) {
-        //           Item item = items[index];
-        //           if (item.getId() == id) {
-        //               rsl = item;
-        //               break;
-        //           }
-        //   }
+       int index = indexOf(id);
        return index !=-1 ? items[index] : null;
       }
-
 
     public Item[] findAll() {
         return Arrays.copyOf(items, size);
@@ -66,6 +56,4 @@ public class Tracker {
             rsl = false;
         return rsl;
     }
-
-
 }
