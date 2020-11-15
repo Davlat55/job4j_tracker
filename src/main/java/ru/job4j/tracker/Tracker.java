@@ -64,8 +64,5 @@ public class Tracker {
             return true;
         }
         return false;
-
-       // items[indexOf(id)] = null;
-       // return true;
     }
 }
