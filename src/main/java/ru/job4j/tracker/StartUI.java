@@ -10,6 +10,7 @@ public class StartUI {
         boolean run = true;
         while (run) {
             this.showMenu();
+            int select = Integer.valueOf(scanner.nextLine());
             /* if */
         }
     }
@@ -25,6 +26,7 @@ public class StartUI {
         System.out.println("5. Find items by name");
         System.out.println("6. Exit Program");
         System.out.println("Select:");
+
     }
 
     public static void main(String[] args) {
@@ -44,7 +46,6 @@ public class StartUI {
         System.out.println("Текущие дата и время после форматирования: " + currentDateTimeFormat);
 
         Scanner scanner = new Scanner(System.in);
-        Tracker tracker = new Tracker();
         new StartUI().init(scanner, tracker);
 
     }
