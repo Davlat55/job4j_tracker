@@ -11,6 +11,27 @@ public class StartUI {
         while (run) {
             this.showMenu();
             int select = Integer.valueOf(scanner.nextLine());
+            if (select == 0) {
+                    System.out.println("=== Create a new Item ====");
+                    System.out.print("Enter name: ");
+                    String name = scanner.nextLine();
+                    Item item = new Item(name);
+                    tracker.add(item);
+                } else if ( select == 1) {
+                System.out.println("Show all items");
+                Item items[] = new items[];
+                tracker.findAll();
+                for (int i = 0; i < items.length.; i++) {
+                    System.out.println(items[i]);
+                }
+
+            }
+
+                /*            } else if (...) { */
+                /*             Добавить остальные действия системы по меню. */
+             else if (select == 6) {
+                run = false;
+            }
             /* if */
         }
     }
