@@ -12,19 +12,16 @@ public class StartUI {
             this.showMenu();
             int select = Integer.valueOf(scanner.nextLine());
             if (select == 0) {
-                   System.out.println("=== Create a new Item ====");
-                    System.out.print("Enter name: ");
-                    String name = scanner.nextLine();
-                    Item item = new Item(item);
-                    tracker.add(item);
-                } else if ( select == 1) {
-                System.out.println("Show all items");
-                //Item[] rsl = new Item[size];
-                //Item items[] = new items[];
-               // Item item = new Item();
+                System.out.println("=== Create a new Item ====");
+                System.out.print("Enter name: ");
+                String name = scanner.nextLine();
                 Item item = new Item();
-                tracker.findAll();
-                System.out.println(item);
+                tracker.add(item);
+                } else if ( select == 1) {
+          //      System.out.println("Show all items");
+          //      Item item = new Item();
+          //      tracker.findAll();
+          //      System.out.println(item);
                // for (int i = 0; i <  ; i++) {
                //     System.out.println(items[i]);
                 //}
