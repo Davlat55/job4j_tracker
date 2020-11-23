@@ -19,12 +19,13 @@ public class StartUI {
                 tracker.add(item);
                 } else if ( select == 1) {
                 System.out.println("Show all items");
-                Item item = new Item();
+         //       Tracker tracker = new Tracker();
+                //Item item = new Item();
                 tracker.findAll();
             //    System.out.println(item);
         //        for (int i = 0; i <  ; i++) {
-                    System.out.println(item);
-                }
+                    System.out.println(tracker);
+            //    }
 
             }
 
