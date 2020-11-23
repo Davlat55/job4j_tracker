@@ -4,6 +4,9 @@ import java.time.LocalDateTime;
 
 public class Item {
 
+    public Item(String name) {
+    }
+
     @Override
     public String toString() {
         return "Item{" +
