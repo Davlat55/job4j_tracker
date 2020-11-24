@@ -14,22 +14,30 @@ public class StartUI {
             if (select == 0) {
                 System.out.println("=== Create a new Item ====");
                 System.out.print("Enter name: ");
-                String name = scanner.nextLine();
-                Item item = new Item(name);
-                tracker.add(item);
+//                String name = scanner.nextLine();
+//                Item item = new Item(name);
+//                tracker.add(item);
                 } else if ( select == 1) {
                 System.out.println("Show all items");
-         //       Tracker tracker = new Tracker();
-                //Item item = new Item();
-                tracker.findAll();
-            //    System.out.println(item);
-        //        for (int i = 0; i <  ; i++) {
-                    System.out.println(tracker);
-            //    }
+                // Tracker tracker = new Tracker();
+                // Item item = new Item();
+                // tracker.findAll();
+                // System.out.println(item);
+                //     for (int i = 0; i <  ; i++) {
+                //    System.out.println(tracker);
+                 //     }
+           // }
 
+                } else if ( select ==2 ) {
+                System.out.println("Edit item");
             }
-
-                /*            } else if (...) { */
+               else if ( select == 3 ) {
+             System.out.println("Delete item");
+         } else if ( select == 4 ) {
+                System.out.println("Find item by Id");
+            } else if ( select == 5 ) {
+                System.out.println("Find items by name");
+            }
                 /*             Добавить остальные действия системы по меню. */
               else if (select == 6) {
                 run = false;
