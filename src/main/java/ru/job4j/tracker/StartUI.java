@@ -19,14 +19,7 @@ public class StartUI {
 //                tracker.add(item);
                 } else if ( select == 1) {
                 System.out.println("Show all items");
-                // Tracker tracker = new Tracker();
-                // Item item = new Item();
-                // tracker.findAll();
-                // System.out.println(item);
-                //     for (int i = 0; i <  ; i++) {
-                //    System.out.println(tracker);
-                 //     }
-           // }
+
 
                 } else if ( select ==2 ) {
                 System.out.println("Edit item");
@@ -38,17 +31,15 @@ public class StartUI {
             } else if ( select == 5 ) {
                 System.out.println("Find items by name");
             }
-                /*             Добавить остальные действия системы по меню. */
               else if (select == 6) {
                 run = false;
             }
-            // if
+
         }
     }
 
     private void showMenu() {
         System.out.println("Menu.");
-        // добавить остальные пункты меню.
         System.out.println("0. Add new Item");
         System.out.println("1. Show all items");
         System.out.println("2. Edit item");
