@@ -24,17 +24,21 @@ public class StartUI {
 
                 } else if ( select ==2 ) {
                 // System.out.println("Edit item");
-                tracker.replace();
+                int id =  Integer.valueOf(scanner.nextLine());
+                tracker.replace(id);
             }
                else if ( select == 3 ) {
              //System.out.println("Delete item");
-                tracker.delete();
+                int id =  Integer.valueOf(scanner.nextLine());
+                tracker.delete(id);
          } else if ( select == 4 ) {
                // System.out.println("Find item by Id");
-                tracker.findById();
+                int id =  Integer.valueOf(scanner.nextLine());
+                tracker.findById(id);
             } else if ( select == 5 ) {
                // System.out.println("Find items by name");
-                tracker.findByName();
+                String name = scanner.nextLine();
+                tracker.findByName(name);
             }
               else if (select == 6) {
                 run = false;
