@@ -22,7 +22,6 @@ public class StartUI {
                 } else if ( select == 1) {
                // System.out.println("Show all items");
                 tracker.findAll();
-
                 } else if ( select ==2 ) {
                 // System.out.println("Edit item");
                 int id =  Integer.valueOf(scanner.nextLine());
