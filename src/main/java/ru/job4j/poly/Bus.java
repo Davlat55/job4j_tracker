@@ -3,7 +3,7 @@ package ru.job4j.poly;
 import java.util.Scanner;
 
 public class Bus implements Transport {
-
+    private Scanner scanner = new Scanner(System.in);
     @Override
     public void drive() {
         System.out.println("We're going!");
@@ -17,7 +17,7 @@ public class Bus implements Transport {
 
     @Override
     public float fill(int gas) {
-        gas = Integer.valueOf(scanner.nextLine());
+      gas = Integer.valueOf(scanner.nextLine());
 
         float cost = gas * 45;
 

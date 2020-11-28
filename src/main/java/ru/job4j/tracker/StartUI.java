@@ -16,7 +16,8 @@ public class StartUI {
                 System.out.println("=== Create a new Item ====");
                 System.out.print("Enter name: ");
                 String name = scanner.nextLine();
-                Item item = new Item(name);
+                Item item = new Item();
+                item.setName(name);
                 tracker.add(item);
                 } else if ( select == 1) {
                // System.out.println("Show all items");
@@ -25,7 +26,10 @@ public class StartUI {
                 } else if ( select ==2 ) {
                 // System.out.println("Edit item");
                 int id =  Integer.valueOf(scanner.nextLine());
-                tracker.replace(id);
+                String name = scanner.nextLine();
+                Item item = new Item();
+                item.setName(name);
+                tracker.replace(id, item);
             }
                else if ( select == 3 ) {
              //System.out.println("Delete item");
