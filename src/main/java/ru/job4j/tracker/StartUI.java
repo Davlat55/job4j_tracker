@@ -19,14 +19,14 @@ public class StartUI {
                 Item item = new Item();
                 item.setName(name);
                 tracker.add(item);
-        //        for (int i = 0; i < item.length; i++) {
-        //            System.out.println(Item item[i]);
-        //        }
 
                 } else if ( select == 1) {
                // System.out.println("Show all items");
                 tracker.findAll();
-
+                Item item = new Item();
+                for (int i = 0; i < item.length; i++) {
+                    System.out.println(item[i]);
+                        }
                 } else if ( select ==2 ) {
                 // System.out.println("Edit item");
                 int id =  Integer.valueOf(scanner.nextLine());
