@@ -65,9 +65,9 @@ public class StartUI {
                 String name = scanner.nextLine();
                 tracker.findByName(name);
                 Item[] byName = tracker.findByName(name);
-                  System.out.println(byName);
-
-//                Item[] items = tracker.findAll();
+                for (int i = 0; i < byName.length; i++) {
+                    System.out.println(byName[i]);
+                }
             }
               else if (select == 6) {
                 run = false;
