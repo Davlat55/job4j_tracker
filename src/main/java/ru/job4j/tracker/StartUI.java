@@ -19,34 +19,54 @@ public class StartUI {
                 Item item = new Item();
                 item.setName(name);
                 tracker.add(item);
+                Item[] items = tracker.findAll();
+                for (int i = 0; i < items.length; i++) {
+                    System.out.println(items[i]);
+                }
 
                 } else if ( select == 1) {
-               // System.out.println("Show all items");
+               System.out.println("Show all items");
                 tracker.findAll();
                 Item item = new Item();
-                for (int i = 0; i < item.length; i++) {
-                    System.out.println(item[i]);
+                Item[] items = tracker.findAll();
+                for (int i = 0; i < items.length; i++) {
+                    System.out.println(items[i]);
                         }
                 } else if ( select ==2 ) {
-                // System.out.println("Edit item");
+                System.out.println("Edit item");
                 int id =  Integer.valueOf(scanner.nextLine());
                 String name = scanner.nextLine();
                 Item item = new Item();
                 item.setName(name);
                 tracker.replace(id, item);
+                Item[] items = tracker.findAll();
+                for (int i = 0; i < items.length; i++) {
+                    System.out.println(items[i]);
+                }
+
             }
                else if ( select == 3 ) {
-             //System.out.println("Delete item");
+             System.out.println("Delete item");
                 int id =  Integer.valueOf(scanner.nextLine());
                 tracker.delete(id);
-         } else if ( select == 4 ) {
-               // System.out.println("Find item by Id");
+                Item[] items = tracker.findAll();
+                for (int i = 0; i < items.length; i++) {
+                    System.out.println(items[i]);
+                }
+
+            } else if ( select == 4 ) {
+                System.out.println("Find item by Id");
                 int id =  Integer.valueOf(scanner.nextLine());
                 tracker.findById(id);
+                Item[] items = tracker.findAll();
+                System.out.println(items[id]);
             } else if ( select == 5 ) {
-               // System.out.println("Find items by name");
+                System.out.println("Find items by name");
                 String name = scanner.nextLine();
                 tracker.findByName(name);
+ //               System.out.println(Item[]);
+
+//                Item[] items = tracker.findAll();
             }
               else if (select == 6) {
                 run = false;
