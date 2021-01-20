@@ -6,5 +6,7 @@ public class animal {
     public void sound() {
         System.out.println(nameClass + " - издает какой-то звук.");
     }
+
 }
-}
+
+
