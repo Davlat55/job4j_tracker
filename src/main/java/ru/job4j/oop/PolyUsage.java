@@ -7,7 +7,7 @@ public class PolyUsage {
         animal cow = new Cow();
         animal goose = new Goose();
         animal pet = new Pet();
-        animal dog = new Dog();
+        animal dog = new Dog2();
         animal guineaPig = new GuineaPig();
 
         animal[] animals = new animal[]{animal, domesticAnimal, cow, goose, pet, dog, guineaPig};
