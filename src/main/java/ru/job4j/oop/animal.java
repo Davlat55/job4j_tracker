@@ -6,7 +6,7 @@ public class animal {
         System.out.println(nameClass + " - издает какой-то звук.");
     }
 
-    public interface Animal {
+    public interface animal {
         void sound();
     }
 
