@@ -10,7 +10,7 @@ public class PolyUsage {
         animal dog2 = new Dog2();
         animal guineaPig = new GuineaPig();
 
-        animal[] animals = new animal[]{animal, cow, goose, pet, dog2, guineaPig};
+        animal[] animals = new animal[]{animal, domesticAnimal, cow, goose, pet, dog2, guineaPig};
         for (animal a : animals) {
             a.sound();
         }
