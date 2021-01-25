@@ -1,8 +1,12 @@
 package ru.job4j.oop;
 
-public class Goose extends DomesticAnimal {
+public class Goose implements animal {
+        @Override
+        public void sound() {
+            System.out.println(getClass().getSimpleName() + " произносит звук: Га-га");
+        }
 
     public void bringFeather() {
-        System.out.println(nameClass + " приносит перо для подушек.");
+        System.out.println(" приносит перо для подушек.");
     }
 }
