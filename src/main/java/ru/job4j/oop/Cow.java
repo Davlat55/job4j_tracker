@@ -2,7 +2,8 @@ package ru.job4j.oop;
 
 //public class Cow extends DomesticAnimal {
     public class Cow implements animal {
-    public void giveMilk() {
+    @Override
+        public void giveMilk() {
         System.out.println(" дает человеку молоко.");
     }
     @Override
