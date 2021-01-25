@@ -1,5 +1,5 @@
 package ru.job4j.oop;
 
-public class Vehicle {
+public interface Vehicle {
     void move();
 }
