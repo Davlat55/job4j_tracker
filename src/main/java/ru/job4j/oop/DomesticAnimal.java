@@ -4,4 +4,8 @@ public class DomesticAnimal extends animal {
     public void liveOnFarm() {
         System.out.println(nameClass + " живет на ферме, приносит пользу.");
     }
+
+    public interface Animal {
+        void sound();
+    }
 }
