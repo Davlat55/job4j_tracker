@@ -9,7 +9,7 @@ public class Usage {
         Vehicle[] vehicles = new Vehicle[]{Plane, Train, Bus};
         for (Vehicle a : vehicles) {
             a.move();
-            //a.polza();
+            a.avail();
         }
 
 

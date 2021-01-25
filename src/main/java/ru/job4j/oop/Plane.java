@@ -6,4 +6,8 @@ public class Plane implements Vehicle{
         System.out.println(getClass().getSimpleName() + " Летает по воздуху.");
     }
 
+    public void avail() {
+        System.out.println("Может быстро доставит пассажиров в далекие города.");
+    }
+
 }
