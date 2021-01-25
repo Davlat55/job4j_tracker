@@ -6,7 +6,7 @@ public class GuineaPig implements animal {
             System.out.println(getClass().getSimpleName() + " громко пищит для привлечения внимания.");
         }
 
-    public void runInWheel() {
+    public void polza() {
         System.out.println(" любит побегать в колесе.");
     }
 }

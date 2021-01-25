@@ -5,7 +5,7 @@ public class Dog2 implements animal {
         public void sound() {
             System.out.println(getClass().getSimpleName() + " произносит звук: Гав-гав.");
         }
-    public void runAfterCat() {
+    public void polza() {
         System.out.println(" не любит кошек, постоянно за ними гоняется.");
     }
 }

@@ -6,7 +6,7 @@ public class Goose implements animal {
             System.out.println(getClass().getSimpleName() + " произносит звук: Га-га");
         }
 
-    public void bringFeather() {
+    public void polza() {
         System.out.println(" приносит перо для подушек.");
     }
 }
