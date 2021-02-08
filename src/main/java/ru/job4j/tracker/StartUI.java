@@ -65,11 +65,16 @@ public class StartUI {
             } else if ( select == 5 ) {
                 System.out.println("Find items by name");
                 String name = scanner.nextLine();
+
                 tracker.findByName(name);
-                Item[] byName = tracker.findByName(name);
-                for (int i = 0; i < byName.length; i++) {
-                    System.out.println(byName[i]);
-                }
+               Item[] byName = tracker.findByName(name);
+               if(byName.length > 0) {
+                   for (int i = 0; i < byName.length; i++) {
+                       System.out.println(byName[i]);
+                   }
+               }
+               else
+                   System.out.println("Элемент не найден");
             }
               else if (select == 6) {
                 run = false;
