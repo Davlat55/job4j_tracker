@@ -41,25 +41,17 @@ public class StartUI {
 
                 if(tracker.replace(id, item))
                      System.out.println("Замена произошла успешно");
-                    else
-                    System.out.println("Замена не произведена");
-
-                Item[] items = tracker.findAll();
-                for (int i = 0; i < items.length; i++) {
-                    System.out.println(items[i]);
-                }
-
+                else
+                     System.out.println("Замена не произведена");
             }
                else if ( select == 3 ) {
              System.out.println("Delete item");
                 int id =  Integer.valueOf(scanner.nextLine());
 
-                tracker.delete(id);
-
-                Item[] items = tracker.findAll();
-                for (int i = 0; i < items.length; i++) {
-                    System.out.println(items[i]);
-                }
+                if(tracker.delete(id))
+                    System.out.println("Элемент успешно удален");
+                else
+                    System.out.println("Не удалось удалит элемент");
 
             } else if ( select == 4 ) {
                 System.out.println("Find item by Id");
