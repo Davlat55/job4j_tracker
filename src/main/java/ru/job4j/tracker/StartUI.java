@@ -39,7 +39,10 @@ public class StartUI {
                 Item item = new Item();
                 item.setName(name);
 
-                tracker.replace(id, item);
+                if(tracker.replace(id, item))
+                     System.out.println("Замена произошла успешно");
+                    else
+                    System.out.println("Замена не произведена");
 
                 Item[] items = tracker.findAll();
                 for (int i = 0; i < items.length; i++) {
