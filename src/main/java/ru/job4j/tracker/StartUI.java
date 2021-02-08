@@ -56,9 +56,12 @@ public class StartUI {
             } else if ( select == 4 ) {
                 System.out.println("Find item by Id");
                 int id =  Integer.valueOf(scanner.nextLine());
-                tracker.findById(id);
-                Item[] items = tracker.findAll();
-                System.out.println(items[id]);
+                if (tracker.findById(id) == null)
+                    System.out.println("Элемент с таким Id не найден");
+                else {
+                    Item[] items = tracker.findAll();
+                    System.out.println(items[id]);
+                }
             } else if ( select == 5 ) {
                 System.out.println("Find items by name");
                 String name = scanner.nextLine();
