@@ -38,7 +38,9 @@ public class StartUI {
                 String name = scanner.nextLine();
                 Item item = new Item();
                 item.setName(name);
+
                 tracker.replace(id, item);
+
                 Item[] items = tracker.findAll();
                 for (int i = 0; i < items.length; i++) {
                     System.out.println(items[i]);
@@ -48,7 +50,9 @@ public class StartUI {
                else if ( select == 3 ) {
              System.out.println("Delete item");
                 int id =  Integer.valueOf(scanner.nextLine());
+
                 tracker.delete(id);
+
                 Item[] items = tracker.findAll();
                 for (int i = 0; i < items.length; i++) {
                     System.out.println(items[i]);
