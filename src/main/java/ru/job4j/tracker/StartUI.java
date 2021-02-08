@@ -19,10 +19,10 @@ public class StartUI {
                 Item item = new Item();
                 item.setName(name);
                 tracker.add(item);
-                Item[] items = tracker.findAll();
-                for (int i = 0; i < items.length; i++) {
-                    System.out.println(items[i]);
-                }
+             //   Item[] items = tracker.findAll();
+             //   for (int i = 0; i < items.length; i++) {
+             //       System.out.println(items[i]);
+             //  }
 
                 } else if ( select == 1) {
                System.out.println("Show all items");
