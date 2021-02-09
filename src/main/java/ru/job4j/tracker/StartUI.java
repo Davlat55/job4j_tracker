@@ -26,8 +26,7 @@ public class StartUI {
 
                 } else if ( select == 1) {
                System.out.println("Show all items");
-                tracker.findAll();
-                Item item = new Item();
+
                 Item[] items = tracker.findAll();
                 for (int i = 0; i < items.length; i++) {
                     System.out.println(items[i]);
@@ -39,34 +38,39 @@ public class StartUI {
                 Item item = new Item();
                 item.setName(name);
 
-                if(tracker.replace(id, item))
-                     System.out.println("Замена произошла успешно");
-                else
-                     System.out.println("Замена не произведена");
+                if(tracker.replace(id, item)) {
+                    System.out.println("Замена произошла успешно");
+                   } else
+                         {
+                           System.out.println("Замена не произведена");
+                         }
             }
                else if ( select == 3 ) {
              System.out.println("Delete item");
                 int id =  Integer.valueOf(scanner.nextLine());
 
-                if(tracker.delete(id))
+                if(tracker.delete(id)) {
                     System.out.println("Элемент успешно удален");
-                else
-                    System.out.println("Не удалось удалит элемент");
+                } else
+                      {
+                          System.out.println("Не удалось удалит элемент");
+                      }
 
             } else if ( select == 4 ) {
                 System.out.println("Find item by Id");
                 int id =  Integer.valueOf(scanner.nextLine());
+                //
                 if (tracker.findById(id) == null)
                     System.out.println("Элемент с таким Id не найден");
                 else {
                     Item[] items = tracker.findAll();
                     System.out.println(items[id]);
                 }
+                ///
             } else if ( select == 5 ) {
                 System.out.println("Find items by name");
                 String name = scanner.nextLine();
 
-                tracker.findByName(name);
                Item[] byName = tracker.findByName(name);
                if(byName.length > 0) {
                    for (int i = 0; i < byName.length; i++) {
