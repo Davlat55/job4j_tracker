@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+//import java.time.LocalDateTime;
+//import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class StartUI {
@@ -19,12 +19,7 @@ public class StartUI {
                 Item item = new Item();
                 item.setName(name);
                 tracker.add(item);
-             //   Item[] items = tracker.findAll();
-             //   for (int i = 0; i < items.length; i++) {
-             //       System.out.println(items[i]);
-             //  }
-
-                } else if ( select == 1) {
+                  } else if ( select == 1) {
                System.out.println("Show all items");
 
                 Item[] items = tracker.findAll();
