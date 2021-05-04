@@ -66,10 +66,8 @@ public class StartUI {
 
                Item[] byName = tracker.findByName(name);
                if(byName.length > 0) {
-                   for (int i = 0; i < byName.length; i++) {
-                       System.out.println(byName[i]);
-                   }
-               }
+                       System.out.println(byName);
+                 }
                else
                    System.out.println("Элемент не найден");
             }
